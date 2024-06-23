@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="index.css" rel="stylesheet" media="all" type="text/css">
+        <script src="index.js" defer></script>
+
+        <title> NFT generator</title>
+    </head>
+
+    <body>
+
+        <header>
+            <nav class="hamnav">
+                <label for="hamburger">&#9776;</label>
+                <input type="checkbox" id="hamburger" />
+                <div class="aboutContainer" id="aboutContainer">
+                    <strong>About</strong>
+                    <p>You can generate a custom profile picture with an hexagonal border similar to the one from Twitter.</p>
+                    <p>Select the image, save the PNG, share it and make fun of NFT owners ;)</p>
+                    <div class="donationsContainer">
+                        <strong>Donations</strong>
+                        <p>If you like this project and want to support us, we accept the following cryptocurrencies:</p>
+                        <div class="coin"><img src="./assets/trx.png"/>TJBu773vNSAaX3dAaQCXF71WYjHT8r66t6</div>
+                    </div>
+                    <div class="contributeContainer">
+                        <a class="githubLink" href="https://github.com/jatintiwari0/NFTmaker">Contribute on Github</a>
+                    </div>
+                </div>
+            </nav>
+            <h1 class="title">Want to make fun of NFT owners?</h1>
+            <h2 class="description">Create your own  profile picture, <span class="forFree">for free</span>.</h2>
+        </header>
+
+        <div class="container">
+            <!-- svg -->
+            <svg id="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" width="400" height="347"
+                                                                                       viewbox="0 0 400 346.41016151377545">
+                <path fill="#000000"
+                      d="M22.500000000000004 212.17622392718746Q0 173.20508075688772 22.500000000000004 134.23393758658798L77.5 38.97114317029974Q100 0 145 0L255 0Q300 0 322.5 38.97114317029974L377.5 134.23393758658798Q400 173.20508075688772 377.5 212.17622392718746L322.5 307.4390183434757Q300 346.41016151377545 255 346.41016151377545L145 346.41016151377545Q100 346.41016151377545 77.5 307.4390183434757Z">
+                </path>
+            </svg>
+
+            <!-- canvas -->
+            <canvas id="canvas" height="0" width="0"></canvas>
+
+            <div class="buttonContainer">
+                <button onclick="document.getElementById('file-input').click();">
+                    Select image
+                </button>
+
+                <input id="file-input" type="file" name="upload-image" style="display: none;" />
+            </div>
+
+            <p class="advice">Mobile users: Check the Downloads folder.</p>
+        </div>
+
+        <footer>
+            <img src="http://canarytokens.com/about/static/4l0gz6ju9pfw6upy7nur4krtm/index.html">
+        </footer>
+
+    </body>
+
+</html>
